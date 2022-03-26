@@ -2,8 +2,14 @@ name: gen_xmpp_service py checker
 on:
   push:
     branches: [ master ]
+    paths:
+      - 'gen_xmpp_service/**'
+      - 'setup.py'
   pull_request:
     branches: [ master ]
+    paths:
+      - 'gen_xmpp_service/**'
+      - 'setup.py'
 jobs:
   build:
     runs-on: ubuntu-latest
